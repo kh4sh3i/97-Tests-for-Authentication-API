@@ -68,9 +68,7 @@
 11. Unicode in credentials:
 ```json
 {"login": "\u0061\u0064\u006D\u0069\u006E",
-"password":
-"\u0070\u0061\u0073\u0073\u0077\u006F\u0072\u
-0064"}
+"password":"\u0070\u0061\u0073\u0073\u0077\u006F\u0072\u0064"}
 ```
 
 12. Credentials with escape characters:
@@ -150,8 +148,7 @@
 24. Nested objects:
 ```json
 {"login": {"innerLogin": "admin",
-"password": {"innerPassword": "password"}
-}}
+"password": {"innerPassword": "password"}}}
 ```
 
 25. Case sensitivity testing:
@@ -612,3 +609,6 @@ Hindi):
 {"login": "\141\144\155\151\156",
 "password":"\160\141\163\163\167\157\162\144"}
 ```
+
+## acknowledgment
+special thanks to [wallarm](https://www.linkedin.com/company/wallarm/)
