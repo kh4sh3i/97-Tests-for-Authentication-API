@@ -17,32 +17,34 @@
 ```json
 {"login": null,
 "password": null}
-
+```
 
 4. Credentials as numbers:
 ```json
 {"login": 123,
 "password": 456}
-
+```
 
 5. Credentials as booleans:
 ```json
 {"login": true,
 "password": false}
+```
 
 
 6. Credentials as arrays:
 ```json
 {"login": ["admin"],
 "password": ["password"]}
+```
 
 
 7. Credentials as objects:
 ```json
 {"login": {"username": "admin",
 "password": {"password": "password"}
-```
 }}
+```
 
 
 8. Special characters in credentials:
@@ -98,8 +100,8 @@
 16. Malformed JSON (extra comma):
 ```json
 {"login": "admin",
-"password": "admin",
-}
+"password": "admin",}
+```
 
 
 17. Missing login key:
@@ -180,8 +182,7 @@
 
 29. Single quotes instead of double:
 ```json
-{'login': 'admin'
-,
+{'login': 'admin',
 'password': 'password'}
 ```
 
@@ -194,17 +195,13 @@
 31. Unicode escape sequence:
 ```json
 {"login": "\u0041\u0044\u004D\u0049\u004E",
-"password":
-"\u0050\u0041\u0053\u0053\u0057\u004F\u0052\u
-0044"}
+"password":"\u0050\u0041\u0053\u0053\u0057\u004F\u0052\u0044"}
 ```
 
 32. Value as object instead of string:
 ```json
-{"login": {"$oid":
-"507c7f79bcf86cd7994f6c0e"},
-"password": "password"}
-}
+{"login": {"$oid":"507c7f79bcf86cd7994f6c0e"},
+"password": "password"}}
 ```
 
 
@@ -218,10 +215,7 @@
 34. Extra nested objects:
 ```json
 {"login": "admin",
-"password": "password",
-"extra": {"key1": "value1",
-"key2": "value2"}
-}
+"password": "password","extra": {"key1": "value1","key2": "value2"}}
 ```
 
 
@@ -234,8 +228,7 @@
 36. Extra symbols after valid JSON:
 ```json
 {"login": "admin",
-"password": "password"}
-@@@@@@}
+"password": "password"}@@@@@@}
 ```
 
 
@@ -280,9 +273,7 @@
 
 43. JSON Injection in Strings:
 ```json
-{"login": "{\"injection\":\"value\"}
-```
-",
+{"login": "{\"injection\":\"value\"}",
 "password": "password"}
 ```
 
@@ -307,8 +298,7 @@
 47. Value as a combination of languages (Here, English and
 Hindi):
 ```json
-{"login": "adminà¤µà¥à¤¯à¤µà¤¸à¥à¤
-¥à¤¾à¤ªà¤•",
+{"login": "adminà¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¾à¤ªà¤•",
 "password": "passwordà¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡"}
 ```
 
@@ -352,8 +342,7 @@ Hindi):
 
 54. JSON Injection in Key:
 ```json
-{"
-{\"injection\":\"value\"}": "admin",
+{"{\"injection\":\"value\"}": "admin",
 "password": "password"}
 ```
 
@@ -374,8 +363,7 @@ Hindi):
 57. Credentials as nested objects:
 ```json
 {"login": {"username": {"value": "admin",
-"password": {"password": {"value":
-"password"}
+"password": {"password": {"value":"password"}
 ```
 
 58. Keys as numbers:
@@ -467,8 +455,7 @@ Hindi):
 72. Multilingual input (here, English and Korean):
 ```json
 {"login": "adminê´€ë¦¬ìž",
-"password": "passwordë¹
-„ë°€ë²ˆí˜¸"}
+"password": "passwordë¹„ë°€ë²ˆí˜¸"}
 ```
 
 73. Extremely long keys:
@@ -516,8 +503,7 @@ Hindi):
 
 80. JSON containing JavaScript code:
 ```json
-{"login": "admin<script>alert('hi')
-</script>",
+{"login": "admin<script>alert('hi')</script>",
 "password": "password"}
 ```
 
@@ -624,6 +610,5 @@ Hindi):
 97. Strings with octal values:
 ```json
 {"login": "\141\144\155\151\156",
-"password":
-"\160\141\163\163\167\157\162\144"}
+"password":"\160\141\163\163\167\157\162\144"}
 ```
